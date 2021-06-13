@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --clr-fill-primary: hsl(235, 21%, 11%);
+    --clr-fill-secondary: hsl(235, 24%, 19%);
+    --clr-text-base: hsl(234, 39%, 85%);
+    --clr-muted-100: hsl(233, 14%, 35%);
+    --clr-muted-200: hsl(237, 14%, 26%);
+    --clr-muted-hover: hsl(236, 33%, 92%);
+  }
+
+  .light-theme {
+    --clr-fill-primary: hsl(236, 33%, 92%);
+    --clr-fill-secondary: hsl(0, 0%, 98%);
+    --clr-text-base: hsl(237, 14%, 26%);
+    --clr-muted-100: hsl(236, 9%, 61%);
+    --clr-muted-200: hsl(233, 11%, 84%);
+    --clr-muted-hover: hsl(234, 11%, 52%);
+  }
+}
+
+@layer components {
+  /* https://www.digitalocean.com/community/tutorials/css-scrollbars-fr */
+  .scrollbar {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #6b7280 transparent; /* scroll thumb and track */
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 8px; /* width of the entire scrollbar */
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #6b7280; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+  }
+}
