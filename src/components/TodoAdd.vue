@@ -1,11 +1,12 @@
 <template>
   <input
     type="checkbox"
-    name="checkAll"
+    id="checkAll"
     @change="checkAll"
     :checked="allChecked"
     :class="{ 'custom-check': allChecked }"
     class="w-6 h-6 bg-transparent rounded-full border-muted hover:border-blue-600" >
+  <label for="checkAll" class="sr-only">Check all Todos</label>
   <input
     @keydown.enter="addTodo"
     v-model="newTodo"

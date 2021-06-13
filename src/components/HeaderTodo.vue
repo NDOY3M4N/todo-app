@@ -11,6 +11,7 @@
     <div class="relative flex items-center justify-between max-w-2xl px-6 mx-auto mt-20">
       <div class="text-4xl font-bold tracking-widest text-white">TODO</div>
       <button
+        aria-label="Change theme"
         class="p-2 border border-transparent rounded-md focus:outline-none focus:border-blue-500"
         @click="changeTheme(!isLightTheme)">
         <IconSun v-if="!isLightTheme" />

@@ -1,8 +1,8 @@
 <template>
   <ul
-    v-if="todos.length > 0"
+    v-if="filteredTodos.length > 0"
     class="divide-y divide-skin-base"
-    :class="{ 'overflow-y-scroll scrollbar h-64': todos.length > 4 }">
+    :class="{ 'overflow-y-scroll scrollbar h-64': filteredTodos.length > 4 }">
     <transition-group
       enter-active-class="transition transform duration-300 ease-in"
       enter-from-class="opacity-0 -translate-x-3"
@@ -27,9 +27,10 @@
               class="ml-4 text-md text-skin-base">{{todo.name}}</label>
           </div>
         <button
-            class="hidden ring-blue-500 ring-offset-8 ring-offset-secondary rounded-sm focus:outline-none focus:ring-2 group-hover:block"
-            @click="removeTodo(todo.id)">
-            <IconCross />
+          aria-label="Remove Todo"
+          class="hidden ring-blue-500 ring-offset-8 ring-offset-secondary rounded-sm focus:outline-none focus:ring-2 group-hover:block"
+          @click="removeTodo(todo.id)">
+          <IconCross />
         </button>
       </li>
     </transition-group>
@@ -56,7 +57,6 @@ export default {
     }
 
     return {
-      todos: computed(() => store.state.todos),
       filteredTodos: computed(() => store.getters.filteredTodos),
       remainingTodos: computed(() => store.getters.remainingTodos),
       removeTodo
