@@ -7,7 +7,7 @@
     v-if="filteredTodos.length > 0"
     class="divide-y divide-skin-base"
     :class="{ 'overflow-y-scroll scrollbar h-64': filteredTodos.length > 4 }">
-    <transition-group
+    <transition-group name="flip-list"
       enter-active-class="transition transform duration-300 ease-in"
       enter-from-class="opacity-0 -translate-x-3"
       enter-to-class="opacity-100 translate-x-0"
@@ -85,5 +85,9 @@ export default defineComponent({
   background-image:
     url("../assets/icons/icon-check.svg"),
     linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.flip-list-move {
+  transition: transform 0.5s;
 }
 </style>
