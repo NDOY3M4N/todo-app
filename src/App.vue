@@ -21,8 +21,8 @@
         <div class="flex flex-col items-center justify-center mt-10">
           <span class="text-skin-muted-100">Drag and drop to reorder list</span>
           <div class="text-skin-muted-100 text-center mt-4">
-            Challenge by <a class="text-skin-base underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a class="text-skin-base underline" href="https://github.com/NDOY3M4N/">NDOY3M4N</a>.
+            Challenge by <a class="text-skin-base underline" href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+            Coded by <a class="text-skin-base underline" href="https://github.com/NDOY3M4N/" rel="noopener">NDOY3M4N</a>.
           </div>
         </div>
       </div>
