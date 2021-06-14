@@ -55,6 +55,9 @@ const store = createStore({
     },
     updateFilter(state, payload) {
       state.filter = payload
+    },
+    updateTodos(state, payload) {
+      state.todos = payload
     }
   },
   actions: {
@@ -78,6 +81,9 @@ const store = createStore({
     },
     filterTodos(ctx, newFilter) {
       ctx.commit('updateFilter', newFilter)
+    },
+    updateTodos(ctx, todos) {
+      ctx.commit('updateTodos', todos)
     }
   },
 })
