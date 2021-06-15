@@ -64,10 +64,8 @@ const store = createStore({
     changeTheme(ctx, theme) {
       ctx.commit('changeTheme', theme)
     },
-    addTodo({ commit, state }, todoToAdd) {
-      const todoExist = state.todos.find((todo) => todo.name === todoToAdd.name)
-
-      if (!todoExist) commit('addTodo', todoToAdd)
+    addTodo(ctx, todoToAdd) {
+      ctx.commit('addTodo', todoToAdd)
     },
     removeTodo({ commit, state }, idTodoToRemove) {
       const indexToRemove = state.todos.findIndex((todo) => todo.id === idTodoToRemove)

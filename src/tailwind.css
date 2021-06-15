@@ -23,6 +23,14 @@
   }
 }
 
+@layer utilities {
+  .custom-check {
+    background-image:
+      url("/src/assets/icons/icon-check.svg"),
+      linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%)) !important;
+  }
+}
+
 @layer components {
   /* https://www.digitalocean.com/community/tutorials/css-scrollbars-fr */
   .scrollbar {

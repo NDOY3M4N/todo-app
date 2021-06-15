@@ -81,12 +81,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.custom-check {
-  background-image:
-    url("../assets/icons/icon-check.svg"),
-    linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-}
-
 .flip-list-move {
   transition: transform 0.5s;
 }

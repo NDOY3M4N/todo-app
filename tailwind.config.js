@@ -45,7 +45,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      display: ['group-hover']
+      display: ['group-hover'],
+      cursor: ['disabled']
     },
   },
   plugins: [require('@tailwindcss/forms')],
