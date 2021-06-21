@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/NDOY3M4N/todo-app](https://github.com/NDOY3M4N/todo-app)
+- Live Site URL: [https://ndoy3m4n.github.io/todo-app/](https://ndoy3m4n.github.io/todo-app/)
 
 ## My process
 
