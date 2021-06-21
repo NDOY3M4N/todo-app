@@ -44,8 +44,10 @@ import { useStore } from "vuex"
 export default {
   components: { HeaderTodo, TodoAdd, TodoList, TodoFilter, TodoClear, TodoRemain },
   setup() {
+    const store = useStore()
+
     return {
-      isLightTheme: computed(() => useStore().state.isLightTheme)
+      isLightTheme: computed(() => store.state.isLightTheme)
     }
   }
 }

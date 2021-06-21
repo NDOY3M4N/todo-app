@@ -2,12 +2,23 @@
   <header class="relative h-72">
     <picture>
       <source
+        v-if="isLightTheme"
         media="(min-width: 640px)"
-        :srcset="'/src/assets/images/bg-desktop-' + [isLightTheme ? 'light' : 'dark'] + '.jpg'">
+        srcset="../assets/images/bg-desktop-light.jpg">
+      <source
+        v-else
+        media="(min-width: 640px)"
+        srcset="../assets/images/bg-desktop-dark.jpg">
       <img
+        v-if="isLightTheme"
         class="absolute inset-0 object-cover w-full h-full"
         alt="Hero background"
-        :src="'/src/assets/images/bg-mobile-' + [isLightTheme ? 'light' : 'dark'] + '.jpg'">
+        src="../assets/images/bg-mobile-light.jpg">
+      <img
+        v-else
+        class="absolute inset-0 object-cover w-full h-full"
+        alt="Hero background"
+        src="../assets/images/bg-mobile-dark.jpg">
     </picture>
     <div class="relative flex items-center justify-between max-w-2xl px-6 mx-auto mt-20">
       <div class="text-4xl font-bold tracking-widest text-white">TODO</div>
@@ -38,7 +49,7 @@ import { computed } from "vue"
 import { useStore } from "vuex"
 
 export default {
-  name: 'headerTodo',
+  name: 'HeaderTodo',
   props: ['isLightTheme'],
   components: { IconSun, IconMoon },
   setup() {

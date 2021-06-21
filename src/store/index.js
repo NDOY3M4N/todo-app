@@ -8,12 +8,12 @@ const store = createStore({
       todos: [
         {
           id: '1',
-          name: 'Learn React JS',
+          name: 'Learn Japanese',
           completed: false,
         },
         {
           id: '2',
-          name: 'Learn Vue JS',
+          name: 'Finish Eighty Six (エイティシックス)',
           completed: true,
         },
       ],

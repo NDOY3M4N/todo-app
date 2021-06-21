@@ -7,12 +7,12 @@ import { useStore } from "vuex"
 import { computed } from "vue"
 
 export default {
-    setup() {
-        const store = useStore()
+  setup() {
+    const store = useStore()
 
-        return {
-            remainingTodos: computed(() => store.getters.remainingTodos),
-        }
+    return {
+      remainingTodos: computed(() => store.getters.remainingTodos),
     }
+  }
 }
 </script>
